@@ -97,3 +97,13 @@ By leveraging models such as **Random Forest**, **SVM**, and **LSTM**, we achiev
 
 The system is well-suited for real-world integration into government and public service platforms to speed up grievance redressal and ensure better administrative responses.
 
+## 📸 Screenshots
+![Screenshot 2025-04-03 215102](https://github.com/user-attachments/assets/df233e0e-7107-4ec9-804e-ecfd3349d336)
+![Screenshot 2025-04-03 215417](https://github.com/user-attachments/assets/dd2bc6e7-77e5-4f78-89f4-d52d0685117c)
+![Screenshot 2025-04-08 113455](https://github.com/user-attachments/assets/dcd43c8e-ec8a-415e-bf23-1ba05555972d)
+![WhatsApp Image 2025-04-08 at 11 36 28_5603b294](https://github.com/user-attachments/assets/4186fbc4-abc3-4723-9b32-10a56be12b9e)
+
+
+
+
+
