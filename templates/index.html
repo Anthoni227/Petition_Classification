@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petition Classifier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("https://us.123rf.com/450wm/wrightstudio/wrightstudio1703/wrightstudio170308737/74729892-businessman-is-drawing-on-virtual-screen-petition-concept.jpg?ver=6");
+            background-repeat: no-repeat;
+            background-size:cover ; 
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        /* .container{
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:350px;
+    width: 550px;
+    gap:30px;
+    
+
+    
+} */
+        .container {
+            background: white;
+            background-size: cover;
+            background-color: transparent;
+            padding: 30px;
+            border-radius: 50px;
+            backdrop-filter: blur(2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            text-align: center;
+            animation: fadeIn 0.5s ease-in-out;    
+        }
+    .login {
+        width: 300; 
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 900;
+        color: rgb(34, 46, 47);
+        text-align: center;
+        border-radius: 30px;
+        background-color: white;
+        margin-top: 5px;
+        padding: 2.5px;
+        font-weight: 900;
+        justify-content: center;
+        align-items: center;  
+        margin-bottom: 20px;
+    }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h2 {
+            font-weight: bold;
+            color: #333;
+        }
+        .btn-custom {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            color: white;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .btn-custom:hover {
+            background: linear-gradient(45deg, #ff8e53, #ff6b6b);
+        }
+        .error-box {
+            background: #ffdddd;
+            color: #d9534f;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        .loader {
+            display: none;
+            margin: 20px auto;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    <script>
+        function showLoader() {
+            document.getElementById('loader').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="login">
+        <h2>Raise Concern</h2></div>
+        <form method="post" action="/predict" onsubmit="showLoader()">
+            <div class="mb-3">
+                <textarea class="form-control" name="petition_text" rows="4" placeholder="Enter your request text here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom">Classify</button>
+            <div id="loader" class="loader"></div>
+        </form>
+
+        {% if error %}
+        <div class="error-box">
+            <p>{{ error }}</p>
+        </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>
