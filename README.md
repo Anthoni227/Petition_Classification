@@ -42,10 +42,10 @@ This system leverages **Natural Language Processing (NLP)** and **Machine Learni
 
 ## 🔍 Technologies Used
 
-- **Languages:** Python  
-- **Libraries:** Scikit-learn, NLTK, TensorFlow/Keras, Pandas, NumPy  
-- **NLP Techniques:** TF-IDF, Tokenization, Padding, Label Encoding  
-- **Visualization:** Matplotlib, Seaborn
+- **Languages:** Python.  
+- **Libraries:** Scikit-learn, NLTK, TensorFlow/Keras, Pandas, NumPy.  
+- **NLP Techniques:** TF-IDF, Tokenization, Padding, Label Encoding.  
+- **Visualization:** Matplotlib, Seaborn.
 
 ---
 
